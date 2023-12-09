@@ -1,7 +1,11 @@
 # HinglishVinglish
 NLP solution for Hindi &amp; English code-mixed classification problem
 
-`domain_adaptation.ipynb` includes:
+### Prerequisite: 
+Our datasets are all maintained under the folder path `/content/drive/MyDrive/Colab Notebooks/NLP Project/data_nlp/` in Google Drive. We run our notebook on Google Colab with Drive mounted. Please make sure to edit file/folder paths across the notebook to point to the correct locations within your environment before you run any Notebook cells.
+
+## `domain_adaptation.ipynb` 
+### Contents:
 1. `bert-base-multilingual-cased` fine-tuned with TRAC-extended dataset. Accuracy: 54%
 2. `bert-base-multilingual-uncased` fine-tuned with MLM objective on Hinglish-TOP dataset. Perplexity: 246.65 -> 6.93  
   i. Finetuned with TRAC-extended dataset. Accuracy: 50%  
