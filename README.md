@@ -8,7 +8,7 @@ Team KNS (Shreya Shukla - https://github.com/shreyashukla01, Krishna Sri Somepal
 ### Motivation
 The objective of this project is to design an aggression detection system that can detect offensive comments from Social Media websites. Though there are prevalent systems that do that for comments in english, there is only some development in the Hindi English code mixed data where hindi and english words exist together and can use script of both languages.
 
-We used both **classic Machine Learning models** and **multilingual models like mBERT** to perform a comprehensive analysis.
+We used **classic Machine Learning models** and **multilingual deep learning models like mBERT** to perform a comprehensive analysis.
 
 ### Dataset 
 The TRAC dataset (https://sites.google.com/view/trac1/shared-task) is primarily utilized in this project. This subset includes an aggression tagset and an annotated corpus of Hindi-English code-mixed data, derived from social media platforms, including Facebook and Twitter.
