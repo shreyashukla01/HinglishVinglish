@@ -20,13 +20,13 @@ The corpus is annotated with three distinct tags: CAG (Covertly Aggressive), OAG
 ### Data Cleaning
 Our data cleaning approach entails: 
 
-- Identification of Language Components: For Hindi-English code-mixed data, we adopt a nuanced strategy that retains essential elements like "matra" or "diacritic marks" and sentence-concluding symbols like ‘।’ for accurate tokenization. 
+- **Identification of Language Components:** For Hindi-English code-mixed data, we adopt a nuanced strategy that retains essential elements like "matra" or "diacritic marks" and sentence-concluding symbols like ‘।’ for accurate tokenization. 
 
-- Removal of Noise and Irrelevant Characters: We eliminate URLs, mentions, hashtags, smileys, emoticons, digits, and certain symbols like ‘-’, ‘(‘, ‘)’, ‘\n’. Pivotal punctuation marks such as ‘.’, ‘?’, or ‘।’ are retained, while multiple occurrences of characters are replaced with a single instance, ensuring a cleaner dataset for analysis.
+- **Removal of Noise and Irrelevant Characters:** We eliminate URLs, mentions, hashtags, smileys, emoticons, digits, and certain symbols like ‘-’, ‘(‘, ‘)’, ‘\n’. Pivotal punctuation marks such as ‘.’, ‘?’, or ‘।’ are retained, while multiple occurrences of characters are replaced with a single instance, ensuring a cleaner dataset for analysis.
 
 
 ### Ablation Study
-We Conducted an ablation study on translated data using machine learning models like SVM, MLP Classifier, and Logistic Classifier on different language features like Bag-of-words, Glove, Bigrams and Tf-idf features.
+We Conducted an **ablation study** on translated data using machine learning models like SVM, MLP Classifier, and Logistic Classifier on different language features like Bag-of-words, Glove, Bigrams and Tf-idf features.
 
 Preprocessing for ablation study (Translation using Google API) -
 
@@ -39,15 +39,15 @@ It was essential to use individual sentences for translation with Google API. We
 [‘मोहन हँसकर बोला’, ‘how are you’, ‘dikhe nahi kitne dinon se’]
 
 **Translate each sentence separately and join** -
-[mohan said laughingly how are you Haven't seen you for so many days]
+[mohan said laughingly how are you haven't seen you for so many days]
 
-The MLP Classifier consistently demonstrates superior performance across both the combined and individual datasets when compared to the other two classifiers (54.39%)
+The **MLP Classifier** consistently demonstrates superior performance across both the combined and individual datasets when compared to the other two classifiers (54.39%)
 
 ### Multilingual models
 
-Using TRAC extended datasets, the performance of the mBERT language model was enhanced through masked language model (MLM) fine-tuning.
+Using TRAC extended datasets, the performance of the **mBERT language mode**l was enhanced through **masked language model (MLM) fine-tuning**.
 
-Following are the metrics for comparison of trained mBERT model performance between plain and transliterated data to assess effectiveness.
+Following are the metrics for comparison of trained mBERT model performance **between plain and transliterated data** to assess effectiveness.
 
 1. `bert-base-multilingual-cased` fine-tuned with TRAC-extended dataset. Accuracy: 54%
 2. `bert-base-multilingual-uncased` fine-tuned with MLM objective on Hinglish-TOP dataset. Perplexity: 246.65 -> 6.93  
