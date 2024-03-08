@@ -20,9 +20,9 @@ The corpus is annotated with three distinct tags: CAG (Covertly Aggressive), OAG
 ### Data Cleaning
 Our data cleaning approach entails: 
 
-- **Identification of Language Components:** For Hindi-English code-mixed data, we adopt a nuanced strategy that retains essential elements like "matra" or "diacritic marks" and sentence-concluding symbols like ‘।’ for accurate tokenization. 
+- **Identification of Language Components:** For Hindi-English code-mixed data, we adopt a strategy that retains essential elements like "matra" or "diacritic marks" and sentence-concluding symbols like ‘।’ for accurate tokenization. 
 
-- **Removal of Noise and Irrelevant Characters:** We eliminate URLs, mentions, hashtags, smileys, emoticons, digits, and certain symbols like ‘-’, ‘(‘, ‘)’, ‘\n’. Pivotal punctuation marks such as ‘.’, ‘?’, or ‘।’ are retained, while multiple occurrences of characters are replaced with a single instance, ensuring a cleaner dataset for analysis.
+- **Removal of Noise and Irrelevant Characters:** We eliminate URLs, mentions, hashtags, smileys, emoticons, digits, and certain symbols like ‘-’, ‘(‘, ‘)’, ‘\n’. Important punctuation marks such as ‘.’, ‘?’, or ‘।’ are retained, while multiple occurrences of characters are replaced with a single instance, ensuring a cleaner dataset for analysis.
 
 
 ### Ablation Study
